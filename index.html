@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Disable button </title>
+</head>
+<body>
+<div id="app" >
+    <div class="tabination">
+        
+       <ul class="tabs">
+           <li :class="[ activeTab == '1' ? 'active-tab' : '' ]" @click="activeTab ='1'">Tab One</li>
+           <li :class="[ activeTab == '2' ? 'active-tab' : '' ]" @click="activeTab ='2'">Tab Two</li>
+           <li :class="[ activeTab == '3' ? 'active-tab' : '' ]" @click="activeTab ='3'">Tab Three</li>
+           <li :class="[ activeTab == '4' ? 'active-tab' : '' ]" @click="activeTab ='4'">Tab Four</li>
+       </ul>
+       <div class="tabs-content">
+           <div class="content" v-if="activeTab == '1'">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime amet distinctio quis sequi! Culpa atque harum esse consectetur magni, ipsam quisquam sapiente obcaecati nobis tempore omnis maxime deserunt doloremque doloribus!</div>
+           <div class="content" v-if="activeTab == '2'"> Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur impedit voluptate, facere corporis maiores rem ullam officia ducimus, temporibus veniam cupiditate, voluptates illo fuga a qui deleniti repellat aspernatur!</div>
+           <div class="content" v-if="activeTab == '3'"> Three Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ab accusantium aspernatur cupiditate ea inventore quae, rem hic fugit ad laborum doloremque, ullam corrupti nesciunt officia. Ea assumenda architecto vel?</div>
+           <div class="content" v-if="activeTab == '4'"> Four Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate reiciendis mollitia, minima minus veritatis quam praesentium rem odio, porro enim dolores vero nemo eos laborum a reprehenderit officiis quo unde.</div>
+       </div>
+    </div>
+</div>
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js" integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Main Js File  -->
+    <script src="main.js"></script>
+</body>
+</html>
